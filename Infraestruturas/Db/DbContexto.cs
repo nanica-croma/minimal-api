@@ -43,7 +43,7 @@ namespace minimal_api.Infraestruturas.Db
         {
             if(!optionsBuilder.IsConfigured)
             {
-            var stringConexao = _configuracaoAppSettings.GetConnectionString("mysql")?.ToString();
+            var stringConexao = _configuracaoAppSettings.GetConnectionString("Mysql")?.ToString();
             
             if(!string.IsNullOrEmpty(stringConexao))
             {
